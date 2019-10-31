@@ -305,9 +305,9 @@ module.exports = function(app, passport){
 
 function contestStarted() {
 	let d = new Date();
-	if(d.getUTCDate() == 10) {
-		if(d.getUTCHours() == 3) {
-			if(d.getUTCMinutes() >= 30) {
+	if(d.getUTCDate() == 30) {
+		if(d.getUTCHours() == 00) {
+			if(d.getUTCMinutes() >= 00) {
 				return true;
 			}
 			else {
@@ -328,9 +328,9 @@ function contestStarted() {
 
 function contestEnded() {
 	let d = new Date();
-	if(d.getUTCDate() == 10) {
-		if(d.getUTCHours() == 18) {
-			if(d.getUTCMinutes() >= 30) {
+	if(d.getUTCDate() == 31) {
+		if(d.getUTCHours() == 23) {
+			if(d.getUTCMinutes() >= 59) {
 				return true;
 			}
 			else {
