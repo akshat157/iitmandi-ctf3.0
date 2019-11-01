@@ -10,47 +10,47 @@ module.exports = function(num){
 			return text;
 		case 1:
 			var text = "";
-			text += "We can see every webpage's code!"
+			text += "Inspect the elements! Even though there aren’t any. :P"
 			return text;
 		case 2:
 			var text = "";
-			text += "How does your program or OS determine what kind of file or image it is? Remember It's not just the extension!"
+			text += "The pattern translates into a terminal command which might be useful for deciphering the string."
 			return text;
 		case 3:
 			var text = "";
-			text += ".hint{<br>\tfind-flag:here;<br>}"
+			text += "Is xxd -r even a filename?"
 			return text;
 		case 4:
 			var text = "";
-			text += "Cryptopals"
+			text += "String has been encrypted using a cipher, but which one? Maybe there is a favorite cipher of the company."
 			return text;
 		case 5:
 			var text = "";
-			text += "use a hex editor to edit the binary."
+			text += "Some files are necessary for website SEO and Facebook doesn’t let you upload malicious files."
 			return text;
 		case 6:
 			var text = "";
-			text += "The IIT Mandi Confession page and a plant can help you."
+			text += "This system of scalar representation may become obsolete in the near future."
 			return text;
 		case 7:
 			var text = "";
-			text += "a**p is congruent to a (mod p) "
+			text += "Of course, the key won’t be in plain sight of the visitor. Perhaps, it is inside a box?"
 			return text;
 		case 8:
 			var text = "";
-			text += "Hmm it doesn't checks anyone's password, except for admins? Can we change something in frontend to fool it? "
+			text += "Version control is a time machine! But somethings can be ignored."
 			return text;
 		case 9:
 			var text = "";
-			text += "Some files can be within hidden folders!"
+			text += "The key is not in the image."
 			return text;
 		case 10:
 			var text = "";
-			text += "Need to convert the given string to Roman Numericals! AAAAAAAAAAAAAA"
+			text += "Unix's cat can do a lot of things. ;)"
 			return text;
 		case 11:
 			var text = "";
-			text += "We can see files in previous commits and maybe 1s can form the flag! "
+			text += "RUSH B!"
 			return text;
 		default:
 			return "Max Level is 11.";
