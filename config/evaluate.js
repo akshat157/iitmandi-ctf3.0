@@ -4,63 +4,63 @@ Level's flag go in this file
 module.exports = function(key, level){
 	switch(level){
 		case 0:
-			if(key === 'wtf{level0_flag}'){
-				return 10;
+			if(key === 'ctf3iitmandi{level0_flag}'){
+				return 13;
 			}
 			else return 0;
 		case 1:
-			if(key === "wtf{1n_th3_l@p_0f_th3_h1m@l@y@}"){
-				return 50;
+			if(key === "ctf3iitmandi{CSS&JS_4R3_G00D&_H7ML_IS_NO7_A_PROG_LANGUAGE}"){
+				return 20;
 			}
 			else return 0;
 		case 2:
-			if(key === "wtf{very_basic_question}"){
+			if(key === "ctf3iitmandi{FaceToTheSunshine}"){
 				return 50;
 			}
 			else return 0;
 		case 3:
-			if(key === "wtf{ld@p_k0_b@nd_k@r@0_k01}"){
-				return 80;
+			if(key === "ctf3iitmandi{Winr4rFreeTri4l}"){
+				return 120;
 			}
 			else return 0;
 		case 4:
-			if(key === "wtf{y0u_kN0w_X02}"){
+			if(key === "ctf3iitmandi{MEMESQUADROXXX}"){
 				return 100;
 			}
 			else return 0;
 		case 5:
-			if(key === "wtf{Ex0dia_h@1_aa_r4ha}"){
-				return 180;
+			if(key === "ctf3iitmandi{d3s1gn4uts_g3ts_th3_cr3d1ts}"){
+				return 170;
 			}
 			else return 0;
 		case 6:
-			if(key === "floraislub"){
-				return 200;
+			if(key === "ctf3iitmandi{MAISAMAYHUN}"){
+				return 180;
 			}
 			else return 0;
 		case 7:
-			if(key === "wtf{d1=m@f1a_n19ht}"){
-				return 360;
+			if(key === "ctf3iitmandi{Th1nk_0uts1de_the_b0x}"){
+				return 130;
 			}
 			else return 0;
 		case 8:
-			if(key === "wtf{missed_party_yesterday}"){
-				return 140;
+			if(key === "ctf3iitmandi{MAISAMAYHUN}"){
+				return 160;
 			}
 			else return 0;
 		case 9:
-			if(key === "wtf{ssh_b0le_t0h_s3cu2e_$h3ll}"){
-				return 150;
+			if(key === "ctf3iitmandi{DEMENTIA}"){
+				return 80;
 			}
 			else return 0;
 		case 10:
-			if(key === "wtf{Timothy_Knows_Da_Wae}"){
-				return 100;
+			if(key === "ctf3iitmandi{OTP_C4N&ME4N$0Meth1ng}"){
+				return 300;
 			}
 			else return 0;
 		case 11:
-			if(key === "957"){
-				return 120;
+			if(key === "ctf3iitmandi{7355608}"){
+				return 42;
 			}
 			else return 0;
 		default:
