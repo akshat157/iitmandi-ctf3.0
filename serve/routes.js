@@ -306,7 +306,7 @@ module.exports = function(app, passport){
 function contestStarted() {
 	let d = new Date();
 	if(d.getUTCDate() == 1) {
-		if(d.getUTCHours() == 14) {
+		if(d.getUTCHours() == 00) {
 			if(d.getUTCMinutes() >= 00) {
 				return true;
 			}
@@ -314,7 +314,7 @@ function contestStarted() {
 				return false;
 			}
 		}
-		else if( d.getUTCHours() > 14																																																																																																																																																																																																																																																																																																																																																																																																																										 ) {
+		else if( d.getUTCHours() > 14) {
 			return true;
 		}
 		else {
