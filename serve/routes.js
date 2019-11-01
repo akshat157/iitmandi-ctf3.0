@@ -73,7 +73,8 @@ module.exports = function(app, passport){
 
 		}
         if(req.isAuthenticated()){
-        	/* Comment next two lines post signup starts and before contest starts. You can uncomment the third line after this. */
+			/* Comment next two lines post signup starts and before contest starts. You can uncomment the third line after this. */
+			console.log(contestStarted());
 			if(contestStarted() || req.user.local.email == "test@test") {
 				var detail = levels(Number(req.body.level));
 	        	res.send(detail);
@@ -302,19 +303,19 @@ module.exports = function(app, passport){
         res.redirect('/');
     });
 };
-
+/* 08:30 for November 2 contest. Change after tests are complete! */
 function contestStarted() {
 	let d = new Date();
 	if(d.getUTCDate() == 1) {
-		if(d.getUTCHours() == 00) {
-			if(d.getUTCMinutes() >= 00) {
+		if(d.getUTCHours() == 08) {
+			if(d.getUTCMinutes() >= 30) {
 				return true;
 			}
 			else {
 				return false;
 			}
 		}
-		else if( d.getUTCHours() > 14) {
+		else if( d.getUTCHours() > 08) {
 			return true;
 		}
 		else {
@@ -329,15 +330,15 @@ function contestStarted() {
 function contestEnded() {
 	let d = new Date();
 	if(d.getUTCDate() == 2) {
-		if(d.getUTCHours() == 22) {
-			if(d.getUTCMinutes() >= 00) {
+		if(d.getUTCHours() == 16) {
+			if(d.getUTCMinutes() >= 30) {
 				return true;
 			}
 			else {
 				return false;
 			}
 		}
-		else if( d.getUTCHours() > 22 ) {
+		else if( d.getUTCHours() > 16 ) {
 			return true;
 		}
 		else {
