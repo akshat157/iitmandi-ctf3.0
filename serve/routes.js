@@ -305,8 +305,8 @@ module.exports = function(app, passport){
 
 function contestStarted() {
 	let d = new Date();
-	if(d.getUTCDate() == 30) {
-		if(d.getUTCHours() == 00) {
+	if(d.getUTCDate() == 2) {
+		if(d.getUTCHours() == 14) {
 			if(d.getUTCMinutes() >= 00) {
 				return true;
 			}
@@ -314,7 +314,7 @@ function contestStarted() {
 				return false;
 			}
 		}
-		else if( d.getUTCHours() > 3 ) {
+		else if( d.getUTCHours() > 14 ) {
 			return true;
 		}
 		else {
@@ -328,23 +328,23 @@ function contestStarted() {
 
 function contestEnded() {
 	let d = new Date();
-	if(d.getUTCDate() == 31) {
-		if(d.getUTCHours() == 23) {
-			if(d.getUTCMinutes() >= 59) {
+	if(d.getUTCDate() == 2) {
+		if(d.getUTCHours() == 22) {
+			if(d.getUTCMinutes() >= 00) {
 				return true;
 			}
 			else {
 				return false;
 			}
 		}
-		else if( d.getUTCHours() > 18 ) {
+		else if( d.getUTCHours() > 22 ) {
 			return true;
 		}
 		else {
 			return false;
 		}
 	}
-	else if(d.getUTCDate() > 10) {
+	else if(d.getUTCDate() > 3) {
 		return true;
 	}
 	else {
