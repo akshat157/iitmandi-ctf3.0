@@ -79,7 +79,7 @@ module.exports = function(app, passport){
 	        	res.send(detail);
 	        } 
 	        else {
-	        	res.send("This will work only after email validation happens (9 March) and CTF starts!");
+	        	res.send("This will work only after email validation happens (2nd November) and CTF starts!");
    			}
     	}
     	else{
@@ -91,7 +91,7 @@ module.exports = function(app, passport){
 	        // render the page and pass in any flash data if it exists
 	        
 	        if(!contestStarted() && req.user.local.email != "test@test") {
-	        	res.send("This will work only after email validation happens (9 March) and CTF starts!");
+	        	res.send("This will work only after email validation happens (2nd November) and CTF starts!");
 	        	return;
 	        }
         	if(contestEnded()) {
@@ -129,7 +129,7 @@ module.exports = function(app, passport){
 
 	app.post('/evaluate', isLoggedIn, function(req, res) {
     	if(!contestStarted() && req.user.local.email != "test@test") {
-	    	res.send("This will work only after email validation happens (9 March) and CTF starts!");
+	    	res.send("This will work only after email validation happens (2nd November) and CTF starts!");
 	    	return;
 	    }
         // render the page and pass in any flash data if it exists
