@@ -23,7 +23,7 @@ module.exports = function(num){
 			Can you figure out what her mother wanted to say?<br><br>\
 			\
 			Welcome to level 3 - Points- 120<br>\
-			An easy one. The key is inside the file inside this <a href='/lvl3.zip'>zip file</a> \
+			An easy one. The key is inside the file inside this <a href='/lvl3.zip' download>zip file</a> \
 			(I guess) at least that is the correct filename I’m \
 			not sure about the extension though :P\
 			Submit the key in the following format (replace &lt;KEY&gt; with the one you found):<br> \
@@ -61,7 +61,7 @@ module.exports = function(num){
 			\
 			Welcome to level 6 - Points- 180<br>\
 			On a fine day in January of 1970 Dennis received a message from Ken. \
-			The message is in this <a href='l6/stamps.txt'>file</a>. It contains some data which is in the form of a scalar \
+			The message is in this <a href='l6/stamps.txt' download>file</a>. It contains some data which is in the form of a scalar \
 			representation of a very special data type in computers. The 0th elements(or maybe the 1th or the -1th element, \
 			if you’re not in India) of  the representation of these values in that data type has a secret message. \
 			Can you decode it? [Note: All the letters in the key would be upper-case.].\
@@ -73,7 +73,7 @@ module.exports = function(num){
 			One of the other authors have HIDDEN the key on his website somewhere. Can you find it?<br><br>\
 			\
 			Welcome to level 8 - Points- 160<br>\
-			<a href='level-8.zip'>This zip</a> looks fishy. But it contains something useful for you. \
+			<a href='level-8.zip' download>This zip</a> looks fishy. But it contains something useful for you. \
 			The key to this level. Not so easy though. Not so easy though. B1-B7 are in the South Campus. \
 			Many other B’s are in the North. But the solution lies in B64. I like hex.<br><br>\
 			\
@@ -119,7 +119,7 @@ module.exports = function(num){
 			return text;
 		case 3:
 			var text = "Welcome to level 3 - Points- 120<br>";
-			text += "An easy one. The key is inside the file inside this <a href='/lvl3.zip'>zip file</a>. \
+			text += "An easy one. The key is inside the file inside this <a href='/lvl3.zip' download>zip file</a>. \
 			(I guess) at least that is the correct filename I’m \
 			not sure about the extension though :P\
 			Submit the key in the following format (replace &lt;KEY&gt; with the one you found):<br> \
@@ -160,7 +160,7 @@ module.exports = function(num){
 		case 6:
 			var text = "Welcome to level 6 - Points- 180<br>";
 			text += "On a fine day in January of 1970 Dennis received a message from Ken. \
-			The message is in this <a href='l6/stamps.txt'>file</a>. It contains some data which is in the form of a scalar \
+			The message is in this <a href='l6/stamps.txt' download>file</a>. It contains some data which is in the form of a scalar \
 			representation of a very special data type in computers. The 0th elements(or maybe the 1th or the -1th element, \
 			if you’re not in India) of  the representation of these values in that data type has a secret message. \
 			Can you decode it? [Note: All the letters in the key would be upper-case.].\
@@ -174,7 +174,7 @@ module.exports = function(num){
 			return text;
 		case 8:
 			var text = "Welcome to level 8 - Points- 160<br>";
-			text += "<a href='level-8.zip'>This zip</a> looks fishy. But it contains something useful for you. \
+			text += "<a href='level-8.zip' download>This zip</a> looks fishy. But it contains something useful for you. \
 			The key to this level. Not so easy though. Not so easy though. B1-B7 are in the South Campus. \
 			Many other B’s are in the North. But the solution lies in B64. I like hex.";
 			return text;
