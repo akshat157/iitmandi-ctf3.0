@@ -119,7 +119,7 @@ module.exports = function(num){
 			return text;
 		case 3:
 			var text = "Welcome to level 3 - Points- 120<br>";
-			text += "An easy one. The key is inside the file inside this <a href=''>zip file</a>. \
+			text += "An easy one. The key is inside the file inside this <a href='/lvl3.zip'>zip file</a>. \
 			(I guess) at least that is the correct filename I’m \
 			not sure about the extension though :P\
 			Submit the key in the following format (replace &lt;KEY&gt; with the one you found):<br> \
