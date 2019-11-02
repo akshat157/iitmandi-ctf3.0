@@ -44,7 +44,7 @@ module.exports = function(key, level){
 			}
 			else return 0;
 		case 8:
-			if(key === "ctf3iitmandi{MAISAMAYHUN}"){
+			if(key === "ctf3iitmandi{You'veg0T4Ff1niTy}"){
 				return 160;
 			}
 			else return 0;
