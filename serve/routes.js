@@ -40,9 +40,8 @@ module.exports = function(app, passport){
 
 	app.post('/login', function(req, res, next) {
 		
-		if(req.body.email != 'guest@students.iitmandi.ac.in'){
-			res.send('0');
-			return;
+		if(req.body.email == 'guest@students.iitmandi.ac.in'){
+			res.send(return res.send({ value : '1', name : 'guest' }););
 		}
 		
 		if (!req.isAuthenticated()){
