@@ -39,6 +39,12 @@ module.exports = function(app, passport){
 	}));
 
 	app.post('/login', function(req, res, next) {
+		
+		if(req.body.email != 'guest@students.iitmandi.ac.in'){
+			res.send('0');
+			return;
+		}
+		
 		if (!req.isAuthenticated()){
 			passport.authenticate('local-login', function(err, user, info) {
 				if(err)
