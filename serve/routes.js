@@ -311,52 +311,54 @@ module.exports = function(app, passport){
 };
 /* 08:30 for November 2 contest. Change after tests are complete! */
 function contestStarted() {
-	let d = new Date();
-	if(d.getUTCDate() == 2) {
-		if(d.getUTCHours() == 08) {
-			if(d.getUTCMinutes() >= 30) {
-				return true;
-			}
-			else {
-				return false;
-			}
-		}
-		else if( d.getUTCHours() > 08) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-	else {
-		return false;
-	}
+// 	let d = new Date();
+// 	if(d.getUTCDate() == 2) {
+// 		if(d.getUTCHours() == 08) {
+// 			if(d.getUTCMinutes() >= 30) {
+// 				return true;
+// 			}
+// 			else {
+// 				return false;
+// 			}
+// 		}
+// 		else if( d.getUTCHours() > 08) {
+// 			return true;
+// 		}
+// 		else {
+// 			return false;
+// 		}
+// 	}
+// 	else {
+// 		return false;
+// 	}
+	return true;
 }
 
 function contestEnded() {
-	let d = new Date();
-	if(d.getUTCDate() == 2) {
-		if(d.getUTCHours() == 16) {
-			if(d.getUTCMinutes() >= 30) {
-				return true;
-			}
-			else {
-				return false;
-			}
-		}
-		else if( d.getUTCHours() > 16 ) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-	else if(d.getUTCDate() > 3) {
-		return true;
-	}
-	else {
-		return false;
-	}
+// 	let d = new Date();
+// 	if(d.getUTCDate() == 2) {
+// 		if(d.getUTCHours() == 16) {
+// 			if(d.getUTCMinutes() >= 30) {
+// 				return true;
+// 			}
+// 			else {
+// 				return false;
+// 			}
+// 		}
+// 		else if( d.getUTCHours() > 16 ) {
+// 			return true;
+// 		}
+// 		else {
+// 			return false;
+// 		}
+// 	}
+// 	else if(d.getUTCDate() > 3) {
+// 		return true;
+// 	}
+// 	else {
+// 		return false;
+// 	}
+	return false;
 }
 
 function isLoggedIn(req, res, next) {
